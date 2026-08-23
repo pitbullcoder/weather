@@ -1,0 +1,10 @@
+[Unit]
+Description=Hourly #weather forecast broadcast
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=120
+Persistent=false
+
+[Install]
+WantedBy=timers.target

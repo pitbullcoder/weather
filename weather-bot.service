@@ -1,0 +1,10 @@
+[Unit]
+Description=Send 3-day forecast to #weather MeshCore channel
+Wants=network-online.target
+After=network-online.target openhop-repeater.service
+
+[Service]
+Type=oneshot
+User=pi
+ExecStart=/opt/weather-bot/venv/bin/python /opt/weather-bot/weather_bot.py
+TimeoutStartSec=240
