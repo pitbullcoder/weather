@@ -11,7 +11,7 @@ Two modes, each driven by its own systemd timer:
        needed -- the key is auto-derived from the name, so it matches
        every other companion's #weather), send, disconnect, exit.
 
-  alerts (--alerts, every 15 minutes)
+  alerts (--alerts, every 5 minutes)
     1. Fetch active NWS alerts for the same point.
     2. Keep only Severe/Extreme ones we have not already broadcast.
     3. Send each as its own SEVERE WX ALERT message on the same channel.
