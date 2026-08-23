@@ -1,0 +1,11 @@
+[Unit]
+Description=Check NWS severe alerts and send to #weather MeshCore channel
+Wants=network-online.target
+After=network-online.target openhop-repeater.service
+
+[Service]
+Type=oneshot
+User=pi
+StateDirectory=weather-bot
+ExecStart=/opt/weather/venv/bin/python /opt/weather/weather_bot.py --alerts
+TimeoutStartSec=180
