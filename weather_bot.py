@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""weather_bot.py -- hourly 3-day forecast broadcast to the #weather channel.
+"""weather_bot.py -- 3-day forecast broadcast (every 4 hours) to the #weather channel.
 
-Runs as a oneshot (systemd timer fires it hourly):
+Runs as a oneshot (systemd timer fires it every 4 hours):
   1. Fetch the NWS forecast for Marion, OH (43302).
   2. Compact it into a single <=140-byte channel message.
   3. Connect to the local openHop companion over TCP, ensure the
