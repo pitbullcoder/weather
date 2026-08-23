@@ -11,7 +11,10 @@ Weather Service API (no API key required).
 Example transmission (one LoRa packet, ~90 bytes):
 
 ```
-WX Marion OH · Sun 84°/61° Sunny · Mon 79°/58° SctT-storms · Tue 74°/51° MCloudy
+WX Marion OH
+Sun 84°/61° Sunny
+Mon 79°/58° SctT-storms
+Tue 74°/51° MCloudy
 ```
 
 On first run the script provisions the `#weather` channel in a free slot

@@ -128,7 +128,7 @@ def format_day(day):
 def build_message(days):
     if not days:
         raise ValueError("no forecast days parsed from NWS response")
-    message = f"WX {LOCATION_TAG} \u00b7 " + " \u00b7 ".join(
+    message = f"WX {LOCATION_TAG}\n" + "\n".join(
         format_day(day) for day in days
     )
     # Stay inside one LoRa packet: degrade gracefully, never fail to send.
