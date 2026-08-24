@@ -3,7 +3,7 @@
 MeshCore Station G3 weather application for the Raspberry Pi Zero 2W.
 
 Broadcasts a compact 3-day forecast for Marion, OH (43302) to the
-`#weather` hashtag channel every 4 hours, via an
+`#weather` hashtag channel twice a day with immediate broadcast if extreme weather occurs, via an
 [openHop Repeater](https://github.com/openhop-dev/openhop_repeater)
 companion identity on the same Pi. Weather data comes from the National
 Weather Service API (no API key required).
